@@ -1,5 +1,7 @@
 # point-of-sale scanning API
   Andrew Liu
+## Structure
+![image](https://github.com/fengliu1227/Point-of-sale-scanning-API/blob/master/point-of-sale-structure.jpg)
 
 
 ## instruction
