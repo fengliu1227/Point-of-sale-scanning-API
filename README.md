@@ -14,7 +14,7 @@ In the future, for extensive purpose, we can have a HashMap<User, Service> to pr
 And for the state transition of App class, it also could be implemented by state design pattern
 
 ### Why use strategy design pattern?
- 1.GetFreeFirstStrategy -> Consider the buy 1 get 1 free first when calculate the total price 
+ 1.GetFreeFirstStrategy -> Consider the buy 1 get 1 free first when calculate the total price \br
  2.VolumeSaleFirstStrategy -> Consider the volume sale first when calculate the total price 
 
 #### case 1:
