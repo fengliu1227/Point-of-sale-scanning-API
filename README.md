@@ -18,30 +18,30 @@ And for the state transition of App class, it also could be implemented by state
  2.VolumeSaleFirstStrategy -> Consider the volume sale first when calculate the total price </br>
 
 #### case 1:
-A    |$2.0 each or 4 for $7.0
-B    |$10.0 buy 1 B get 1 A free
+A    |$2.0 each or 4 for $7.0</br>
+B    |$10.0 buy 1 B get 1 A free</br>
 
-scan("AAAAABB") -> 5As 2Bs
+scan("AAAAABB") -> 5As 2Bs</br>
 
  1.GetFreeFirstStrategy -> the total price = (2 * 3 + 10 * 2) *(1 + tax) = 26 * 1.1 = 28.6</br>
  2.VolumeSaleFirstStrategy -> the total price = (7 + 10 * 2) * (1 + tax) = 27 * 1.1 = 29.7</br>
  So, in this case, the correct total price is 28.6(GetFreeFirstStrategy)</br>
 
 #### case 2:
-A    |$1.0 each or 6 for $5.0
-B    |$10.0 buy 1 B get 1 A free
+A    |$1.0 each or 6 for $5.0</br>
+B    |$10.0 buy 1 B get 1 A free</br>
 
-scan("AAAAAAABB") -> 7As 2Bs
+scan("AAAAAAABB") -> 7As 2Bs</br>
 
  1.GetFreeFirstStrategy -> the total price = (1 * 5 + 10 * 2) *(1 + tax) = 25 * 1.1 = 27.5</br>
  2.VolumeSaleFirstStrategy -> the total price = (5 + 10 * 2) * (1 + tax) = 25 * 1.1 = 27.5</br>
  So, in this case, the correct total price is 27.5(both these 2 strategies right)</br>
 
 #### case 3:
-A    |$1.0 each or 7 for $5.0
-B    |$2.0 buy 1 B get 1 A free
+A    |$1.0 each or 7 for $5.0</br>
+B    |$2.0 buy 1 B get 1 A free</br>
 
-scan("AAAAAAAABB") -> 8As 2Bs
+scan("AAAAAAAABB") -> 8As 2Bs</br>
 
  1.GetFreeFirstStrategy -> the total price = (1 * 6 + 10 * 2) *(1 + tax) = 26 * 1.1 = 28.6</br>
  2.VolumeSaleFirstStrategy -> the total price = (5 + 10 * 2) * (1 + tax) = 25 * 1.1 = 27.5</br>
