@@ -49,8 +49,6 @@ public class Service {
             return 0.0;
         }
         else{
-            System.out.println(volumeSaleFirstStrategy.checkOut(products, scanned));
-            System.out.println(getFreeFirstStrategy.checkOut(products, scanned));
             double result = Math.min(volumeSaleFirstStrategy.checkOut(products, scanned), getFreeFirstStrategy.checkOut(products, scanned));
             scanned.clear();
             return result;
@@ -63,6 +61,7 @@ public class Service {
 
     public void setPrice(String code, Double price, int volumeSize, double volumePrice){
         products.get(code).setPrice(price);
+        products.get(code).setVolumeSale(true);
         products.get(code).setVolumeSize(volumeSize);
         products.get(code).setVolumePrice(volumePrice);
     }
