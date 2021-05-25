@@ -1,4 +1,4 @@
-# point-of-sale scanning API
+# point-of-sale scanning API（java）
   Andrew Liu
 ## Structure
 ![image](https://github.com/fengliu1227/Point-of-sale-scanning-API/blob/master/point-of-sale-structure.jpg)
