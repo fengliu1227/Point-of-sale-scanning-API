@@ -1,7 +1,6 @@
 # point-of-sale scanning API
- by Andrew Liu
-## instruction
-## test case
+  Andrew Liu
+
 
 ## instruction
 
